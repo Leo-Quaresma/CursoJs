@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: azure;
+    }
+    div{
+        margin-top: 25px;
+    }
+    </style>
+    
+<body>
+    <h1>Olá, vamos subtrair</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Subtraia" onclick="subtrair()">
+    <div id="res"> Resultado</div>
+<script>
+function subtrair() {
+    var t1 = window.document.getElementById('n1')
+    var t2 = window.document.querySelector('input#n2')
+    var nc1 = Number(t1.value)
+    var nc2 = Number(t2.value)
+    var s = nc1 - nc2
+    res.innerHTML = `A subtração de ${nc1} e ${nc2} é igual a ${s}`
+
+}
+
+
+</script>
+</body>
+</html>

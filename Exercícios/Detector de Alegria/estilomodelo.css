@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(89, 153, 206);
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    
+    padding: 15px;
+
+}
+label{
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+div#botao{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+img{
+    size-adjust: 20px;
+}

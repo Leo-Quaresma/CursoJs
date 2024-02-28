@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div#area {
+        background-color: rgb(236, 5, 5);
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        color: yellow;
+        margin-top: 110px;
+    }
+</style>
+<body>
+    <h1>Olha o botão</h1>
+    <div id="area">
+        Oi, interaja aqui
+    </div>
+    <script>
+        var carente = window.document.getElementById('area')
+        carente.addEventListener('click', clicou)
+        carente.addEventListener('mouseout', Volte_aqui)
+        carente.addEventListener('mouseenter', voltou)
+
+        function Volte_aqui(){
+            carente.innerText = "Volte!"
+        }
+        function clicou(){
+            carente.innerText = "Apertou"
+        }
+        function voltou() {
+            carente.innerText = "Você Voltou!"
+        }
+    </script>
+</body>
+</html>

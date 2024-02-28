@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecedor</title>
+    <style>
+        input{
+            padding: 17px;
+        }
+        body{
+            text-align: center;
+        }
+        h1{
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clica no botão</h1>
+    <input type="button" value="Começe as perguntas" onclick="perguntar()">    
+</body>
+
+<script>
+    function perguntar(){
+        var nome = prompt('Qual seu nome?')
+        var idade = prompt('E qual sua idade?')
+        alert(`Olá ${nome} agora eu te conheço e sei que tens ${idade} anos`)
+    }
+</script>
+</html>

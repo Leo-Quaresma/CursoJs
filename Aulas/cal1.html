@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Calculadora</title>
+    <style>
+        body{
+            background-color: blue;
+            text-align: center;
+            margin: auto;
+        }
+        input.pp{
+            background-color: blue;
+            color: white;
+            size-adjust: 15px;
+        }
+        div#res {
+            margin-top: 15pt;
+            font: normal 25pt Arial;
+        }
+        section{
+            border: 3px solid;
+            border-radius: 10px;
+            margin: auto;
+            width: 370px;
+            padding: 9px;
+            margin-top: 30px;
+            background-color: white;
+        }
+        input.number{
+            width: 80px;
+
+        }
+
+        div#res{
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+<section>
+        <h1>Calculadora</h1>
+        <input class="number" type="number" name="pp" id="v1">
+        <input class="number" type="number" name="pp" id="v2">
+        <br>
+        <input type="button" value="+" onclick="somar()">
+        <input type="button" value="-" onclick="subtrair()">
+        <input type="button" value="x" onclick="multiplicar()">
+        <input type="button" value="/" onclick="divisão()">
+        <br>
+        <div id="res">
+        </div>
+</section>
+    <script>
+        var n1 = window.document.getElementById('v1')
+        var n2 = window.document.getElementById('v2')
+        function somar(){
+            var nc1 = Number(n1.value)
+            var nc2 = Number(n2.value)
+            var soma = nc1 + nc2
+            res.innerHTML = `O resultado da soma de ${nc1} + ${nc2} é ${soma}`
+        }
+        
+        function subtrair(){
+            var nc1 = Number(n1.value)
+            var nc2 = Number(n2.value)
+            var subt = nc1 - nc2
+            res.innerHTML = `O resultado da subtração de ${nc1} - ${nc2} é ${subt}`
+        }
+
+        function multiplicar(){
+            var nc1 = Number(n1.value)
+            var nc2 = Number(n2.value)
+            var mult = nc1 * nc2
+            res.innerHTML = `O resultado da multiplicação de ${nc1} x ${nc2} é ${mult}`
+        }
+
+        function divisão() {
+            var nc1 = Number(n1.value)
+            var nc2 = Number(n2.value)
+            var div = nc1 / nc2
+            res.innerHTML = `O resultado da divisão de ${nc1} / ${nc2} é ${div}`
+        }
+    </script>
+</body>
+</html>
